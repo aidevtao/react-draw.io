@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T02:21:41.832Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="EUUgOh_C1PMxaWaujhUc" version="21.3.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-05-15T10:07:18.917Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="K9eRqGDaxZkN-KSOC5hn" version="21.3.0" type="github" pages="4">
   <diagram id="alYklhB5D0XrzLlzqiiz" name="React 理念">
     <mxGraphModel dx="104" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -205,7 +205,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="mzb0lVoIYYJPpzqZTodL" name="初次渲染">
+  <diagram id="mzb0lVoIYYJPpzqZTodL" name="初次渲染&amp;&amp;更新">
     <mxGraphModel dx="954" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -473,11 +473,49 @@
         <mxCell id="b0Prkdu7AtCXKaBE5OG9-86" value="classComponentUpdater.enqueueForceUpdate" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
           <mxGeometry x="1815" y="-20" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="b0Prkdu7AtCXKaBE5OG9-91" value="流程同render上1234，只是5非紧急更新的处理函数是entangleTransitionUpdate(root,&amp;nbsp;queue,&amp;nbsp;lane);" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-91" target="b0Prkdu7AtCXKaBE5OG9-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-91" value="流程同render上1234，只是5非紧急更新的处理函数是entangleTransitionUpdate(root,&amp;nbsp;queue,&amp;nbsp;lane);" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#000000;fillColor=#BC6C25;rotation=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="2200" y="-140" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="b0Prkdu7AtCXKaBE5OG9-93" value="流程同render上1234，没有5" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-93" target="b0Prkdu7AtCXKaBE5OG9-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-93" value="流程同render上1234，没有5。因为是外界的" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#000000;fillColor=#BC6C25;rotation=0;glass=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="2200" y="-50" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-96" value="dispatchReducerAction" style="whiteSpace=wrap;html=1;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2620" y="-135" width="125" height="31.25" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-98" target="b0Prkdu7AtCXKaBE5OG9-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-98" value="updateSyncExternalStore" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="2574" y="-50" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-100" value="updateStoreInstance" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="2788" y="-50" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-100" target="b0Prkdu7AtCXKaBE5OG9-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3230" y="-40" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-104" target="b0Prkdu7AtCXKaBE5OG9-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-104" value="forceStoreRerender" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="3002" y="-50" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;" edge="1" parent="1" source="b0Prkdu7AtCXKaBE5OG9-106" target="b0Prkdu7AtCXKaBE5OG9-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-106" value="updateStoreInstance" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="3216" y="-50" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b0Prkdu7AtCXKaBE5OG9-108" value="scheduleUpdateOnFiber" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="3430" y="-50" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
