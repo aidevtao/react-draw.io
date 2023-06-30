@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-06-12T12:34:59.005Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="Awc3UbYhpxn-qikiqHt1" version="21.3.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-06-30T07:18:03.488Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="d4-hLEQRV8sUfvWDF5Eb" version="21.5.2" type="github" pages="4">
   <diagram id="alYklhB5D0XrzLlzqiiz" name="React 理念">
-    <mxGraphModel dx="344" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="104" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="sjJi5Qajrq8tQviPXBCQ" name="Fiber">
-    <mxGraphModel dx="344" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="104" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -171,7 +171,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mzb0lVoIYYJPpzqZTodL" name="初次渲染&amp;&amp;更新">
-    <mxGraphModel dx="1194" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -481,6 +481,46 @@
         </mxCell>
         <mxCell id="b0Prkdu7AtCXKaBE5OG9-108" value="scheduleUpdateOnFiber" style="whiteSpace=wrap;html=1;strokeColor=#DDA15E;fontColor=#FEFAE0;fillColor=#BC6C25;rotation=0;" parent="1" vertex="1">
           <mxGeometry x="3430" y="-50" width="150" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9OlXaJx-okYo2HVFl9_A" name="并发更新体系结构">
+    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZCxeGsfTHxohZpR_7s4O-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="ZCxeGsfTHxohZpR_7s4O-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="440" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZCxeGsfTHxohZpR_7s4O-1" target="ZCxeGsfTHxohZpR_7s4O-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCxeGsfTHxohZpR_7s4O-1" value="Fiber架构" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZCxeGsfTHxohZpR_7s4O-2" target="oTdVfKlIb8En-YugYLGX-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCxeGsfTHxohZpR_7s4O-2" value="Time Slice" style="whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oTdVfKlIb8En-YugYLGX-1" target="oTdVfKlIb8En-YugYLGX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-1" value="lane 模型" style="whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-3" value="Batched Update" style="whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-5" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oTdVfKlIb8En-YugYLGX-6" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="170" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
